@@ -52,6 +52,12 @@
             });
         }
     }
+
+    auth.onAuthStateChanged(user => {
+        isAuthenticated = !!user;
+        if (user) d("auth")
+    });
+    
 </script>
 
 <div>
